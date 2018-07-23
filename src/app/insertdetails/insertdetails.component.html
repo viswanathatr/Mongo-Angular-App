@@ -1,0 +1,30 @@
+<div [hidden]="submitted">
+	<form (ngSubmit)="onSubmit()">
+
+		<div id="enter_details" class="container">
+
+			<div class="row">
+				<div class="col-md-3 text-alignment">Employee id :</div>
+				<div class="col-md-9">
+					<input type="text" name="id" id="insert_id"
+						[(ngModel)]="employeedetails.id" [required]="true"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 text-alignment">Employee name:</div>
+				<div class="col-md-9">
+					<input type="text" name="insert_empname" id="insert_empname"
+						[(ngModel)]="employeedetails.name" [required]="true"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3" style="text-align: right">
+					<input type="submit" value="Insert" id="submit_insert"
+						class="btn btn-primary">
+				</div>
+				<div class="col-md-9" style="visibility: hidden;">Empty Div</div>
+			</div>
+		</div>
+	</form>
+</div>
+<app-modal></app-modal>

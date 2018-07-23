@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+@import "~font-awesome/css/font-awesome.css";
+
+.dataTables_wrapper, .container {
+	margin-top: 50px;
+}
+
+.menubuttons {
+	text-align: center;
+}
+
+#enter_details .row, #update_details .row {
+	margin-bottom: 20px;
+}
+
+body {
+	border-radius: 25px;
+}
+.top-padding{
+	padding-top: 7px;
+	
+}
+.header-class {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+}

@@ -1,0 +1,27 @@
+<div [hidden]="submitted" >
+	<form (ngSubmit)="onSubmit()">
+
+		<div id="update_details" class="container">
+			<div class="row">
+				<div class="col-md-3 text-alignment">Update based on employee id(Filter) :</div>
+				<div class="col-md-9">
+					<input type="text" name="id_current" id="update_id" [(ngModel)]="employeedetails.id">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 text-alignment">Update employee name :</div>
+				<div class="col-md-9">
+					<input type="text" name="id_new" id="update_name" [(ngModel)]="employeedetails.name">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3" style="text-align: right">
+					<input type="submit" value="Update" id="submit_update"
+						class="btn btn-primary">
+				</div>
+				<div class="col-md-9" style="visibility: hidden;">Empty Div</div>
+			</div>
+		</div>
+	</form>
+</div>
+<app-modal></app-modal>
